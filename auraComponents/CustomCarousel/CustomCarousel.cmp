@@ -1,0 +1,44 @@
+<aura:component description ="CustomCarousel"
+                implements  = "c:AllLabels"
+                access      = "global">
+
+    <aura:attribute name="idImages"               type="List"/>
+    <aura:attribute name="prefixUrl"              type="String"/>
+    <aura:attribute name="url"                    type="String"     default="/sfc/servlet.shepherd/version/download/"/>
+    <aura:attribute name="pathToPictureWithoutId" type="String"     default="{!'/' + v.prefixUrl + v.url}"/>
+    <aura:attribute name="selectedPictureNumber"  type="Integer"    default="1"/>
+    <aura:attribute name="selectedPicture"        type="String"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <div class="slds-modal__content slds-p-around_xxx-small picture-border content">
+        <div class="contentContainer">
+            <span id="picturesCounter" class="img-counter">
+                {!v.selectedPictureNumber} / {!v.idImages.length}
+            </span>
+
+            <img src   ="{! v.pathToPictureWithoutId + v.url + v.selectedPicture}"
+                 class ="picture-border"/>
+
+            <div class="buttonsContainer">
+                <lightning:buttonIcon
+                        iconName="utility:chevronleft"
+                        class="previous"
+                        alternativeText="{!v.previousButtonAlternativeText}"
+                        variant="bare-inverse"
+                        size="large"
+                        value="previous"
+                        onclick="{!c.handlePreviousNext}"/>
+
+                <lightning:buttonIcon
+                        iconName="utility:chevronright"
+                        class="next"
+                        alternativeText="{!v.nextButtonAlternativeText}"
+                        variant="bare-inverse"
+                        size="large"
+                        value="next"
+                        onclick="{!c.handlePreviousNext}"/>
+            </div>
+        </div>
+    </div>
+</aura:component>

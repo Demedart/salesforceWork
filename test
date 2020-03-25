@@ -1,0 +1,15 @@
+
+# Пожалуйста, введите сообщение коммита для ваших изменений. Строки,
+# начинающиеся с «#» будут проигнорированы, а пустое сообщение
+# отменяет процесс коммита.
+#
+# На ветке master
+# Ваша ветка обновлена в соответствии с «origin/master».
+#
+# Изменения, которые будут включены в коммит:
+#	новый файл:    auraComponents/CustomCarousel/CustomCarousel.cmp
+#	новый файл:    auraComponents/CustomCarousel/CustomCarousel.cmp-meta.xml
+#	новый файл:    auraComponents/CustomCarousel/CustomCarousel.css
+#	новый файл:    auraComponents/CustomCarousel/CustomCarouselController.js
+#	новый файл:    auraComponents/CustomCarousel/CustomCarouselHelper.js
+#

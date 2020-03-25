@@ -1,0 +1,31 @@
+.THIS .slds-button__icon {
+    color:black;
+}
+
+.THIS .content {
+    height:inherit;
+    width:inherit;
+}
+
+.THIS .contentContainer {
+    display: grid;
+    justify-content:center;
+    max-height:inherit;
+    max-width:inherit;
+    position:relative;
+}
+
+.THIS .picture-border {
+    max-height:16rem;
+    max-width:16rem;
+}
+
+.THIS .img-counter {
+    display:flex;
+    justify-content:center;
+}
+
+.THIS .buttonsContainer {
+    display:flex;
+    justify-content:center;
+}
